@@ -15,9 +15,7 @@
 					<td class='property-td'>Thumbnail</td>
 					<td class='value-td'><div class=value-div>
 						{{#if properties.thumbnail}}
-							<a href='javascript:showThumbnail("{{properties.title}}", "{{{properties.thumbnail}}}")'>
-								<img class='thumbnail' alt='' src='data:image/jpeg;charset=utf-8;base64, {{{properties.thumbnail}}}'></img>
-							<a>
+							<img class='thumbnail' alt='' src='/services/catalog/{{properties.id}}?transform=thumbnail'></img>
 						{{else}}
 							<i>No image available</i>
 						{{/if}}	

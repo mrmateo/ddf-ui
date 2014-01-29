@@ -47,9 +47,9 @@
 	<script type="text/javascript" src="/search/simple/lib/bootstrap-2.3.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 
-		function showThumbnail(title, thumbnail) {
+		function showThumbnail(title, id) {
 		    $('#metacardModal .modal-header h3').text(title);
-		    $('#metacardModal .modal-body').html("<img alt=\"\" src=\"data:image/jpeg;charset=utf-8;base64, " + thumbnail + "\"></img");
+		    $('#metacardModal .modal-body').html("<img src=\"/services/catalog/" + id + "?transform=thumbnail" + "\" />");
 		    $('#metacardModal').modal('show');
 		}
 

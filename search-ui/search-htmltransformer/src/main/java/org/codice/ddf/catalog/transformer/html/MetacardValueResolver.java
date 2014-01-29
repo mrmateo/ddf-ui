@@ -54,7 +54,7 @@ public class MetacardValueResolver implements ValueResolver {
                 if(bytes == null) {
                     return null;
                 }
-                return DatatypeConverter.printBase64Binary(bytes);
+                return metacard.getId();
             } else if (Metacard.SOURCE_ID.equals(name)) {
                 return metacard.getSourceId();
             } else if (TYPE.equals(name)) {
